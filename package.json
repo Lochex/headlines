@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "prod": "webpack -p",
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "jest": {
     "transform": {
