@@ -1,0 +1,78 @@
+{
+  "name": "headlines",
+  "version": "1.0.0",
+  "description": "A front end app for aggregating new from different sources using the NewsAPI",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleFileExtensions": [
+      "jsx",
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ],
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lochex/headlines.git"
+  },
+  "author": "Elo Okonkwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lochex/headlines/issues"
+  },
+  "homepage": "https://github.com/Lochex/headlines#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "flux": "^3.1.2",
+    "node-env-file": "^0.1.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-dropdown": "^1.2.5",
+    "react-google-login": "^2.9.2",
+    "react-router-dom": "^4.1.1",
+    "react-select": "^1.0.0-rc.5"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.28.0",
+    "image-webpack-loader": "^3.3.1",
+    "jest": "^20.0.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "sinon": "^2.3.4",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-preset-babel-stage-2": "^0.2.0"
+  }
+}
