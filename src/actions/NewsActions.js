@@ -5,9 +5,7 @@ import * as Constants from '../constants/NewsConstants';
 
 const PATH_BASE = 'https://newsapi.org/v1';
 const ART_SEARCH = '/articles';
-// const SOURC_SEARCH = '/sources';
 const PARAM_SEARCH = 'source=';
-// const LANG = 'language=en';
 const SORT_BY = 'sortBy=';
 const API_KEY = 'apiKey=';
 const KEY_VALUE = process.env.KEY;

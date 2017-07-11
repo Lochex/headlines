@@ -1,4 +1,4 @@
-// Random User API logic
+// Random News API logic
 import { receiveArticles } from '../actions/NewsServerActions';
 
 export default function getNewsApi() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import './App.css';
+import './app.scss';
 import NewsStore from './stores/NewsStore';
 import * as NewsAction from './actions/NewsActions';
 
@@ -95,13 +95,13 @@ class App extends Component {
     NewsStore.removeChangeListener(this.onChange);
   }
 
-  onDismiss(id) {
-    const isNotId = item => item.objectID !== id;
-    const updatedHits = this.state.result.hits.filter(isNotId);
-    this.setState({
-      result: { ...this.state.result, hits: updatedHits },
-    });
-  }
+  // onDismiss(id) {
+  //   const isNotId = item => item.objectID !== id;
+  //   const updatedHits = this.state.result.hits.filter(isNotId);
+  //   this.setState({
+  //     result: { ...this.state.result, hits: updatedHits },
+  //   });
+  // }
 
   // setSearchTopStories(result) {
   //   this.setState({ result });

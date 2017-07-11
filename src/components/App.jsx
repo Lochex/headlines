@@ -5,7 +5,7 @@ import 'react-select/scss/default.scss';
 import 'react-dropdown/style.css';
 import Header from './Header.jsx';
 import Table from './AricleCards.jsx';
-import '../App.css';
+import '../app.scss';
 import NewsStore from '../stores/NewsStore';
 import * as NewsAction from '../actions/NewsActions';
 
@@ -147,10 +147,8 @@ class App extends Component {
   //   });
   // }
   render() {
-    //  console.log("elo", this.state);
-    console.log(this.state);
-    const { searchTerm, result, options, selectValue, sortValue } = this.state;
-    console.log(result);
+    //  console.log("elo", this.state);   
+    const { searchTerm, result, options, selectValue, sortValue } = this.state;   
     if (!result) { return null; }
     return (
       <div className="page">
