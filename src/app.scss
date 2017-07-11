@@ -222,8 +222,10 @@ body {
 	background: transparent;
 	color: $color_1;
 	text-align: inherit;
+	padding: 6px;
+  margin-top: 4px;
+  text-align: center;
 	-webkit-font-smoothing: inherit;
-	padding: 0;
 	font-size: inherit;
 	cursor: pointer;
 }

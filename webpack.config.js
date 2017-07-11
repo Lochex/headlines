@@ -104,9 +104,9 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         KEY: JSON.stringify(process.env.KEY),
         ID: JSON.stringify(process.env.ID),
+        NODE_ENV: JSON.stringify('production')
       }
     }),
   ],

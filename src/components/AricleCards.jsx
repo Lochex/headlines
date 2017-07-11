@@ -47,14 +47,6 @@ const Table = ({ list, onDismiss, pattern }) =>
             <p>{item.description}</p>
             <p>{item.author}</p>
           </span>
-          <span style={smallColumn}>
-            <Button
-              onClick={() => onDismiss(item.objectID)}
-              className="button-inline"
-            >
-              Favorites
-            </Button>
-          </span>
         </div>,
     )}
   </div>);
