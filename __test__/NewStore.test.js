@@ -4,6 +4,12 @@ import Header from '../src/components/Header.jsx';
 import Search from '../src/components/Search.jsx';
 import AricleCards from '../src/components/AricleCards.jsx';
 
+const storageMock = () => ({
+  setItem: jest.fn(),
+  getItem: jest.fn(),
+});
+window.localStorage = storageMock();
+
 describe('Addition', () => {
   it('knows that 2 and 2 make 4', () => {
     expect(2 + 2).toBe(4);

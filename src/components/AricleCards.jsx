@@ -39,14 +39,14 @@ const Table = ({ list, onDismiss, pattern }) =>
     { list.filter(isSearched(pattern)).map(item =>
         item.title &&
         <div key={item.url} className="table-row">
-          <span style={imgColumn} className="picColumn">
+          <div style={imgColumn} className="picColumn">
             <img alt="" src={item.urlToImage} style={picWidth} />
-          </span>
-          <span style={largeColumn} className="newsColumn">
+          </div>
+          <div style={largeColumn} className="newsColumn">
             <a href={item.url} rel="noopener noreferrer" target="_blank" style={titleFont}>{item.title}</a>
             <p>{item.description}</p>
             <p>{item.author}</p>
-          </span>
+          </div>
         </div>,
     )}
   </div>);
