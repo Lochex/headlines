@@ -4,9 +4,7 @@ import Header from './Header.jsx';
 
 const Login = () => {
   const onSuccess = (response) => {
-    // console.log(response);
     const profile = response.getBasicProfile();
-    // console.log(profile.getName());
     localStorage.setItem(
       'User',
       JSON.stringify({
@@ -16,7 +14,6 @@ const Login = () => {
         email: profile.getEmail()
       })
     );
-    // console.log(localStorage.User);
     // const pro = JSON.parse(localStorage.getItem('User'));
     window.location.replace('#/news');
   };

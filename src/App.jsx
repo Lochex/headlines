@@ -24,7 +24,7 @@ import * as NewsAction from './actions/NewsActions';
 //   },
 // ];
 
-const DEFAULT_QUERY = 'bloomberg';
+const DEFAULT_QUERY = 'cnn';
 // const DEFAULT_PAGE = 0;
 
 // //  const PATH_BASE = 'https://hn.algolia.com/api/v1';
