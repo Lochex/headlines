@@ -7,7 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const env = require('node-env-file');
 const webpack = require('webpack');
 
-env(__dirname + '/.env');
+env(path.resolve(__dirname, '/.env'));
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   title: 'News App',
