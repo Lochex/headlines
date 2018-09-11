@@ -7,7 +7,7 @@ const Search = ({ value, onChange, onSubmit, children }) => (
         <span className="fa fa-search" />
         <input
           type="text"
-          placeholder="Search stories by title..."
+          placeholder="Search news by title..."
           value={value}
           onChange={onChange}
         />
