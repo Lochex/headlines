@@ -29,7 +29,7 @@ const Login = () => {
             <span className="google-login">
               <GoogleLogin
                 tag="span"
-                clientId="315100942829-5nsuidu45bhc82kqh7enmtc37ee2sefv.apps.googleusercontent.com"
+                clientId=""
                 buttonText="Login with Google"
                 onSuccess={onSuccess}
                 onFailure={onSuccess}
